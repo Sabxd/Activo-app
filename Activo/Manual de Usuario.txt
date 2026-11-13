@@ -1,0 +1,75 @@
+Manual de Usuario: Proyecto Activo! (Versión 1.0)
+
+1. Introducción y Descripción General
+
+El presente documento constituye la guía oficial de uso e instalación del repositorio Activo!. Activo! es una aplicación 
+multiplataforma, cuyo propósito fundamental es facilitar la conexión entre usuarios que requieren servicios específicos 
+(tales como mecánica automotriz, limpieza, plomería, entre otros) y profesionales independientes que ofrecen dichos 
+servicios.
+
+La versión actual corresponde a la Versión 1.0. En esta etapa, el repositorio contiene únicamente la estructura base 
+y el entorno de desarrollo configurado. El proyecto no incluye interfaces de usuario finales, bases de datos ni 
+sistemas de autenticación. Su función es servir como cimiento técnico para el desarrollo futuro.
+
+
+2. Requisitos del Entorno de Desarrollo
+
+Para la correcta visualización, compilación y ejecución del código contenido en este repositorio, el entorno local debe 
+cumplir con las siguientes especificaciones:
+
+- Sistema Operativo: Windows.
+- Entorno de Desarrollo Integrado (IDE): Android Studio, versión Rabbit 2 (2026.2.2).
+- Kit de Desarrollo de Java (JDK): Versión 21. (Lo incluye el JetBrains Runtime (JBR) compatible de forma nativa).
+- SDK de Android: Nivel de API mínimo establecido en la versión 23 (Android 6.0 Marshmallow).
+- Control de Versiones: Git (opcional, requerido únicamente para la clonación del repositorio).
+
+3. Procedimiento de Instalación y Ejecución
+
+El proceso para desplegar el proyecto en un entorno local consta de los siguientes pasos secuenciales:
+
+	3.1. Obtención del Código Fuente: Acceder al repositorio remoto alojado en GitHub y descargar el código fuente 
+	      mediante el archivo comprimido (ZIP) o mediante el comando de terminal: git clone [URL_DEL_REPOSITORIO].
+
+	3.2. Apertura del Proyecto: Iniciar la aplicación Android Studio. En la ventana de bienvenida, seleccionar 
+	     la opción "Open". Luego "Localizar" y seleccionar la carpeta raíz del proyecto descargado, y confirmar 
+	     la acción.
+
+	3.3. Sincronización de Dependencias: Al abrir el proyecto, el sistema de compilación (Gradle) iniciará la descarga
+	     automática de los componentes necesarios. Observar la barra de estado en la sección inferior del IDE y 
+	     aguardar hasta que el proceso finalice y se muestre el mensaje de confirmación de sincronización exitosa 
+	     ("Gradle sync finished").
+
+	3.4. Ejecución en Dispositivo Virtual o Físico: Verificar que exista un emulador configurado (a través del Device
+	     Manager) o un dispositivo físico conectado con la depuración USB habilitada. Seleccionar el dispositivo de 
+	     destino en el menú desplegable de la barra de herramientas superior. Presionar el botón de ejecución 
+	     (Play / Run 'app') o utilizar el atajo de teclado Shift + F10. El sistema compilará el proyecto e instalará 
+	     la aplicación.
+
+	3.5. Verificación de la Ejecución: Tras completar la instalación, la aplicación se abrirá automáticamente en el 
+	     dispositivo seleccionado. La interfaz mostrará una pantalla en color de fondo predeterminado con un saludo. 
+	     La aparición de este texto confirma que la configuración inicial, la compilación y el 
+	     despliegue se han realizado de manera correcta.
+
+
+4. Estructura del Código Fuente (Versión 1.0)
+
+El código fuente actual se encuentra en la ruta app/src/main/java/com/equipo/activo/. La estructura mínima consta de:
+
+- MainActivity.kt: Archivo principal que define el punto de entrada de la aplicación y renderiza el componente visual 
+  básico de bienvenida mediante Jetpack Compose.
+
+
+5. Alcance y Siguientes Etapas:
+
+Dado que esta es una versión inicial, las funcionalidades descritas a continuación se encuentran en desarrollo y no 
+forman parte del código actual:
+
+	- Integración de Interfaz de Usuario: Incorporación de los diseños gráficos provenientes de Figma mediante el 
+	  uso de herramientas de conversión de código.
+
+	- Desarrollo de Lógica de Negocio: Implementación de la arquitectura de software (ViewModel, Repositorios).
+
+	- Conexión a Base de Datos: Integración de servicios de red (APIs) para la gestión de perfiles de usuarios y 
+	  profesionales.
+
+	- Autenticación: Implementación de módulos de registro e inicio de sesión.
